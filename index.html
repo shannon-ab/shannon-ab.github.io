@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shannon's JavaScript To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="input">
+            <img src="add-circle.svg" alt="icon">
+            <input type="text" placeholder="new task">
+        </div>
+        <div class="controls">
+            <div class="categories">
+                <span id="all" class="active">All</span>
+                <span id="pending">Pending</span>
+                <span id="completed">Completed</span>
+            </div>
+            <button class="clear">Clear All</button>
+        </div>
+        <ul class="tasks"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

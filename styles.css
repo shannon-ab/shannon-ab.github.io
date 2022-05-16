@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background-color: #CCACAE;
+}
+
+.wrapper{
+    background-color: white;
+    max-width: 405px;
+    border-radius: 10px;
+    margin: 130px auto;
+    padding: 28px 0;
+}
+
+.input{
+    height: 45px;
+    padding: 0 25px;
+    position: relative;
+}
+
+.input img{
+    position: absolute;
+    top: 50%;
+    transform: translate(17px, -50%);
+}
+
+.input input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 0 20px 0 45px;
+}
+
+li{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.controls{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 25px;
+    border-bottom: 1px solid #999;
+}
+
+.categories span{
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+.categories span.active{
+    color: #CCACAE;
+}
+
+.clear{
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    background-color: #CCACAE;
+    color: white;
+    font-weight: 500;
+    padding: 5px 13px;
+    font-size: 12px;
+}
+
+.tasks{
+    margin:25px;
+}
+
+.tasks .task{
+    list-style: none;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.tasks .task:last-child{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.tasks label{
+    display: flex;
+}
+
+.tasks label input{
+    margin-top: 6px;
+    margin-right: 15px;
+}
+
+#edit, #delete{
+    font-size: 18px;
+}
+
+.task .settings{
+    cursor:pointer;
+    position: relative;
+}
+
+.settings .menu{
+    position: absolute;
+    background: white;
+    padding: 4px 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    z-index: 2;
+    right: -5px;
+    bottom: -45px;
+    transform: scale(0);
+    transition: transform 0.1s ease;
+}
+
+.settings .menu.show{
+    transform: scale(1);
+}
+
+.menu li{
+    height: 20px;
+    font-size: 14px;
+    justify-content: flex-start;
+    padding: 15px 12px;
+}
+
+.menu li:hover{
+    background-color: #f5f5f5;
+}
+.menu li span{
+    padding-right: 8px;
+}
