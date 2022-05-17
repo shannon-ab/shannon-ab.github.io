@@ -53,6 +53,7 @@ li{
     justify-content: space-between;
     padding: 16px 25px;
     border-bottom: 1px solid #999;
+    cursor: pointer;
 }
 
 .categories span{
